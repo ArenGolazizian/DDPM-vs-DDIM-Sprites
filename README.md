@@ -21,8 +21,7 @@ A forward (noising) process is defined as:
 ```math
 q(\mathbf{x}_t \mid \mathbf{x}_0) = \mathcal{N}\Bigl(\mathbf{x}_t; \sqrt{\overline{\alpha}_t}\,\mathbf{x}_0,\,(1 - \overline{\alpha}_t)\mathbf{I}\Bigr),
 ```
-where
-$\overline{\alpha}_t = \prod_{i=1}^{t} \alpha_i, \quad \alpha_i = 1 - \beta_i.$
+where $\overline{\alpha}_t = \prod_{i=1}^{t} \alpha_i, \quad \alpha_i = 1 - \beta_i.$
 - $\beta_i$ is a variance schedule controlling how much noise is added each step.  
 - $\mathbf{x}_0$ is the original (clean) image, $\mathbf{x}_t$ is the image at diffusion step $t$.
 
