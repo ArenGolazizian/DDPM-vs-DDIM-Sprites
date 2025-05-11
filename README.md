@@ -1,7 +1,7 @@
 # DDPM vs. DDIM for Sprite Image Generation
 
-This repository demonstrates how to train **Denoising Diffusion Probabilistic Models (DDPM)** and **Denoising Diffusion Implicit Models (DDIM)** to generate 16×16 sprite images. The project uses PyTorch and evaluates the generated samples via the **Fréchet Inception Distance (FID)** score.\
-> **NOTE**: All experiments, training, and results are provided in the `notebooks/Diffusion-sprites.ipynb` directory.
+This repository demonstrates how to train **Denoising Diffusion Probabilistic Models (DDPM)** and **Denoising Diffusion Implicit Models (DDIM)** to generate 16×16 sprite images. The project uses PyTorch and evaluates the generated samples via the **Fréchet Inception Distance (FID)** score.
+**NOTE**: All experiments, training, and results are provided in the `notebooks/Diffusion-sprites.ipynb` directory.
 
 
 ## Project Overview
@@ -108,14 +108,9 @@ Below are the **training vs. validation** MSE losses over 40 epochs:
 
 ## FID Evaluation
 - **3000 images** were generated and compared to **3000 real sprites** using [pytorch-fid](https://github.com/mseitzer/pytorch-fid).
-- **FID** obtained: `31.996654421590506`
+- **FID** obtained: ~32
 A lower FID indicates higher similarity to the real dataset.
 
-## References
-- DDPM: Ho et al., Denoising Diffusion Probabilistic Models (2020)
-- DDIM: Song et al., Denoising Diffusion Implicit Models (2020)
-- UNet: Ronneberger et al., U-Net: Convolutional Networks for - Biomedical Image Segmentation (2015)
-- FID: Heusel et al., GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium (2017)
 
 ## References
 
