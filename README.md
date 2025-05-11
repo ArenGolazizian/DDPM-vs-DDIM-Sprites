@@ -1,7 +1,7 @@
 # DDPM vs. DDIM for Sprite Image Generation
 
 This repository demonstrates how to train **Denoising Diffusion Probabilistic Models (DDPM)** and **Denoising Diffusion Implicit Models (DDIM)** to generate 16×16 sprite images. The project uses PyTorch and evaluates the generated samples via the **Fréchet Inception Distance (FID)** score.\
-All experiments, training, and results are provided in the `notebooks/Diffusion_sprites.ipynb` directory.
+> **NOTE**: All experiments, training, and results are provided in the `notebooks/Diffusion-sprites.ipynb` directory.
 
 
 ## Project Overview
@@ -116,3 +116,10 @@ A lower FID indicates higher similarity to the real dataset.
 - DDIM: Song et al., Denoising Diffusion Implicit Models (2020)
 - UNet: Ronneberger et al., U-Net: Convolutional Networks for - Biomedical Image Segmentation (2015)
 - FID: Heusel et al., GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium (2017)
+
+## References
+
+- DDPM: Ho, J., Jain, A., & Abbeel, P. (2020). *Denoising Diffusion Probabilistic Models*. [arXiv:2006.11239](https://arxiv.org/abs/2006.11239)
+- DDIM: Song, J., Meng, C., & Ermon, S. (2020). *Denoising Diffusion Implicit Models*. [arXiv:2010.02502](https://arxiv.org/abs/2010.02502)
+- UNet: Ronneberger, O., Fischer, P., & Brox, T. (2015). *U-Net: Convolutional Networks for Biomedical Image Segmentation*. [arXiv:1505.04597](https://arxiv.org/abs/1505.04597)
+- FID: Heusel, M., Ramsauer, H., Unterthiner, T., Nessler, B., & Hochreiter, S. (2017). *GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium*. [arXiv:1706.08500](https://arxiv.org/abs/1706.08500)
