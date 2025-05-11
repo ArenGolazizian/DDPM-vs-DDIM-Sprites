@@ -1,6 +1,7 @@
 # DDPM vs. DDIM for Sprite Image Generation
 
 This repository demonstrates how to train **Denoising Diffusion Probabilistic Models (DDPM)** and **Denoising Diffusion Implicit Models (DDIM)** to generate 16×16 sprite images. The project uses PyTorch and evaluates the generated samples via the **Fréchet Inception Distance (FID)** score.
+
 **NOTE**: All experiments, training, and results are provided in the `notebooks/Diffusion-sprites.ipynb` directory.
 
 
@@ -109,7 +110,7 @@ Below are the **training vs. validation** MSE losses over 40 epochs:
 ## FID Evaluation
 - **3000 images** were generated and compared to **3000 real sprites** using [pytorch-fid](https://github.com/mseitzer/pytorch-fid).
 - **FID** obtained: ~32
-A lower FID indicates higher similarity to the real dataset.
+(A lower FID indicates higher similarity to the real dataset.)
 
 
 ## References
